@@ -29,6 +29,7 @@ header{
 .banner {
     /*background-image: url('../../img/hotel/timbre.jpg');*/
     min-height: 100vh; /*Para que ocupe todo el alto de la pantalla*/
+    max-height: 100vh;
     background-size: cover; /*Para que cubra todo*/
     background-attachment: fixed;
 }
@@ -48,7 +49,7 @@ header{
 
 .banner-content {
     position: absolute;
-    top: 30%;
+    top: 50vh;
     text-align: center;
     color: seashell;
 }
@@ -56,14 +57,6 @@ header{
 /*=====PRINCIPAL=====*/
 
 /*=====QUIENES-SOMOS=====*/
-
-.card-quienes-somos{
-    margin-top: 100px;
-}
-
-.card-body{
-    background-color: seashell;
-}
 
 /*=====COMERCIALIZACION=====*/
 

@@ -17,8 +17,10 @@ class Home extends BaseController
 
     public function quienes_somos(){
         $data["title"]="quienes-somos";
+        $data['bannerimg']="assets/img/hotel/pasillo.jpg";
         echo view("front/head", $data);
         echo view("front/navbar");
+        echo view("front/banner", $data);
         echo view("front/quienesSomos");
         echo view("front/footer");
     }
