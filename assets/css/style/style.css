@@ -27,7 +27,7 @@ header{
 /*=====BANNER=====*/
 
 .banner {
-    background-image: url('../../img/hotel/timbre.jpg');
+    /*background-image: url('../../img/hotel/timbre.jpg');*/
     min-height: 100vh; /*Para que ocupe todo el alto de la pantalla*/
     background-size: cover; /*Para que cubra todo*/
     background-attachment: fixed;
