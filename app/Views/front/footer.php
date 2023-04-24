@@ -32,5 +32,6 @@
         
       </div>
   </footer>
+  <script src="assets/js/bootstrap.min.js" integrity="" crossorigin=""></script>
   </body>
 </html>

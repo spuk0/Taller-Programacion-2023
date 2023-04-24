@@ -6,7 +6,7 @@ class Home extends BaseController
 {
     public function index()
     {
-        $data['title']="principal";
+        $data['title']="Hotel Guarani en Corrientes - Principal";
         echo view("front/head", $data);
         echo view("front/navbar");
         echo view("front/banner");
