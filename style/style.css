@@ -1,42 +1,54 @@
-*{ 
+* { 
     margin:0;
     padding:0;
-}
-.titulo{
-    background-color: #92a8d1;
-    margin: 20px;
+    box-sizing: border-box;
 }
 
-.parrafo{
-    background-color: green;
-    padding-top:50px;
-    padding-left: 10px;
-    padding-bottom: 60px;
-    padding-right: 300px;
+body {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 
-footer{ background-color: GoldenRod;
-    padding: 10px 20px 30px 40px; margin: 10px 200px; 
+/*=====HEADER=====*/
+h2 {
+    padding-top: 100px;
 }
 
-p { 
-    font-family: verdana;/*tipo de letras*/ 
-    text-align: justify;/*alineación del texto*/ 
-    color: red; /*color de la fuente*/ 
-    font-size: 24px;/*tamaño de la fuente*/ 
-    font-style: italic; /*estilo */ 
-    font-weight: bold; /* negrito o fuerte*/ 
-} 
-body { 
-    background-color: lightblue; /*color de fondo del body*/ 
-} 
-/* color y alineación de la etiqueta h1*/ 
-h1 {
-    color: white; 
-    font-weight: bold;/* negrito o fuerte*/ 
-    text-align: center;
+/*=====BANNER=====*/
+
+.banner {
+    border: 1px solid black;
 }
 
-.division{
-    color: violet !important;
+.banner h1 {
+    color: red !important;
 }
+
+/*=====PRINCIPAL=====*/
+.carousel-img {
+    min-width: 100vh;
+    max-height: 60vh;
+    border: 1px solid black;
+}
+
+/*=====QUIENES-SOMOS=====*/
+
+.card-quienes-somos{
+    margin-top: 100px;
+}
+
+.card-body{
+    background-color: seashell;
+}
+
+/*=====COMERCIALIZACION=====*/
+
+
+/*=====FOOTER=====*/
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
