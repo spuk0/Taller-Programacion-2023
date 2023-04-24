@@ -1,4 +1,6 @@
-<div class="container-fluid justify-content-center banner">
-    <h1>HOTEL GUARANI</h1>
-    <p>El mejor en la ciudad</p>
+<div class="banner">
+    <div class="container-fluid banner-content d-flex flex-column justify-content-center">
+        <h1>HOTEL GUARANI</h1>
+        <p>Lo mejor de Corrientes</p>
+    </div>
 </div>

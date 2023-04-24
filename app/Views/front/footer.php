@@ -1,3 +1,4 @@
+</main>
 <footer class="text-center text-lg-start text-white bg-dark ">
       <div class="d-flex justify-content-between align-items-center">
         <!--==========SOCIAL-BUTTONS==========-->
