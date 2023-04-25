@@ -2,7 +2,7 @@
     <form class="form-contact mt-5 d-flex justify-content-center">
         <div class="container-fluid">
             <div class="text-center">
-                <h3 class="text-primary">Contáctanos</h3>
+                <h3 class="text-dark">Contáctanos</h3>
                 <img src="assets/img/icons/h-icon.svg" width="40" class="lead">
             </div>
             <div class="d-flex justify-content-center">

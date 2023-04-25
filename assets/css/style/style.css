@@ -55,10 +55,40 @@ header{
 }
 
 /*=====PRINCIPAL=====*/
+.principal{
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.bienvenida {
+    min-height: 40vh;
+}
+
+.conta-con-nosotros {
+    min-height: 70vh;
+}
+
+.servicios-destacados{
+    margin-bottom: 2vh;
+}
 /*=====QUIENES-SOMOS=====*/
 
+.mision-vision {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+}
+
 /*=====COMERCIALIZACION=====*/
+
+.comercializacion {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+}
+
 
 .embed-container {
     border: 1px solid black;

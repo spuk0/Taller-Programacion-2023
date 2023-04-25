@@ -23,7 +23,7 @@
             </figure>
         </div>
     </div>
-    <section class="container d-flex flex-column align-items-center">
+    <section class="container conta-con-nosotros d-flex flex-column align-items-center">
         <h3>Conta con nosotros</h3>
         <div class="row">
             <div class="col-sm-3 mb-3 mb-sm-0">
@@ -52,7 +52,7 @@
             </div>
         </div>
     </section>
-    <section class="container d-flex flex-column align-items-center">
+    <section class="container servicios-destacados d-flex flex-column align-items-center">
         <h3>Servicios destacados</h3>
         <div class="servicios container d-flex justify-content-evenly text-center">
             <figure class="figure">
