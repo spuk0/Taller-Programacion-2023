@@ -6,7 +6,7 @@ class Home extends BaseController
 {
     public function index()
     {
-        $data['title']="Hotel Guarani en Corrientes - Principal";
+        $data['title']="Plaza Hotel en Corrientes - Principal";
         $data['bannerimg']="assets/img/hotel/timbre.jpg";
         echo view("front/head", $data);
         echo view("front/navbar");
@@ -16,7 +16,7 @@ class Home extends BaseController
     }
 
     public function quienes_somos(){
-        $data["title"]="quienes-somos";
+        $data["title"]="Acerca de Corrientes Plaza Hotel, quienes somos";
         $data['bannerimg']="assets/img/hotel/pasillo.jpg";
         echo view("front/head", $data);
         echo view("front/navbar");
@@ -26,7 +26,7 @@ class Home extends BaseController
     }
 
     public function comercializacion(){
-        $data["title"]="comercializacion";
+        $data["title"]="Corrientes Plaza Hotel comercializacion y servicios";
         $data['bannerimg']="assets/img/hotel/habitacion1.jpg";
         echo view("front/head", $data);
         echo view("front/banner", $data);

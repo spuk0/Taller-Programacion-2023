@@ -23,7 +23,7 @@
             <div class="container row align-items-center">
                 <p class="col-sm-3">Nuestras instalaciones incluyen una piscina climatizada, un gimnasio totalmente equipado y un spa de última generación para que puedas mimarte y relajarte durante tu estadía. Además, ofrecemos servicios de lavandería, servicio de habitaciones y wifi gratuito en todo el hotel para asegurarnos de que te sientas cómodo y conectado en todo momento.</p>
                 <img class="img-fluid rounded col-sm-6" style="width: 30rem;" src="assets/img/hotel/piscina3.jpg" alt="">
-                <p class="col-sm-3">Ya sea que estés aquí por negocios o por placer, nuestro hotel es la opción perfecta para tu próximo viaje. ¡Esperamos darte la bienvenida pronto al Hotel Guarani!</p>
+                <p class="col-sm-3">Ya sea que estés aquí por negocios o por placer, nuestro hotel es la opción perfecta para tu próximo viaje. ¡Esperamos darte la bienvenida pronto a Corrientes Plaza Hotel!</p>
             </div>
         </article>
 
