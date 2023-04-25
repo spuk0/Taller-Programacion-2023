@@ -27,7 +27,9 @@ class Home extends BaseController
 
     public function comercializacion(){
         $data["title"]="comercializacion";
+        $data['bannerimg']="assets/img/hotel/habitacion1.jpg";
         echo view("front/head", $data);
+        echo view("front/banner", $data);
         echo view("front/navbar");
         echo view("front/comercializacion");
         echo view("front/footer");
