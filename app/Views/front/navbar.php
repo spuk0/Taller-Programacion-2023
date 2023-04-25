@@ -44,10 +44,7 @@
               <a class="nav-link" href="<?php echo base_url("terminos-y-usos");?>">Términos y Usos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/stats.html">Catálogo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/stats.html">Consultas</a>
+              <a class="nav-link" href="<?php echo base_url("reservacion");?>">Reservación</a>
             </li>
           </ul>
         </div>

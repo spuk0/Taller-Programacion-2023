@@ -9,7 +9,7 @@
           <h5 class="card-title">Cuando mas lo desees</h5>
           <p class="card-text">Nuestro equipo altamente capacitado se asegura de que tu estadía sea memorable, ofreciendo un servicio excepcional en todas las áreas del hotel. 
             Disfruta de nuestro restaurante con opciones de cocina local e internacional, y relájate en nuestro bar mientras disfrutas de una copa después de un día ocupado.</p>
-          <a href="#" class="btn btn-primary">RESERVAR</a>
+          <a href="<?php echo base_url("reservacion");?>" class="btn btn-dark">RESERVAR</a>
         </div>
       </div>
     </section>
@@ -75,9 +75,11 @@
 
     <section class="infos-pago">
       <h3>Aceptamos todos los medios de pago online</h3>
-      <img src="assets/img/utilities/medios-de-pago.png" alt="medios de pago" width="785">
+      <img class="img-fluid" src="assets/img/utilities/medios-de-pago.png" alt="medios de pago" width="785">
       <h4>O paga presencialmente, encontrandonos en la siguiente ubicacion de Corrientes Capital</h4>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.0401184875736!2d-58.83611161266707!3d-27.468010355565237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456ca1235114bd%3A0xba68e2b5a1155376!2sCorrientes%20Plaza%20Hotel!5e0!3m2!1ses-419!2sar!4v1682399674803!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="embed-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.0401184875736!2d-58.83611161266707!3d-27.468010355565237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456ca1235114bd%3A0xba68e2b5a1155376!2sCorrientes%20Plaza%20Hotel!5e0!3m2!1ses-419!2sar!4v1682399674803!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </section>
   </article>
 </div>

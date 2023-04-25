@@ -46,7 +46,7 @@
                         <h5 class="card-title">Deleitate:</h5>
                         <p class="card-text">Un trato profesional pero totalmente familiar. En nuestro hotel encontraras detalles, mimo y dedicación, para que te sientas como en tu propia casa.</p>
                         <p class="card-text">Disfruta de tus días de descanso en el corazón de la Ciudad y no dudes en consúltanos sobre la multitud de servicios que podemos ofrecerte.</p>
-                        <a href="#" class="btn btn-primary">Más sobre los servicios</a>
+                        <a href="<?php echo base_url("comercializacion");?>" class="btn btn-dark">Más sobre los servicios</a>
                     </div>
                 </div>
             </div>

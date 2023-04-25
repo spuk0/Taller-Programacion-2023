@@ -54,4 +54,14 @@ class Home extends BaseController
         echo view("front/terminosYUsos");
         echo view("front/footer");
     }
+
+    public function reservacion(){
+        $data["title"]="Corrientes Plaza Hotel reserva, hace tu reservacion";
+        $data['bannerimg']="assets/img/hotel/comedor2.jpg";
+        echo view("front/head", $data);
+        echo view("front/navbar");
+        echo view("front/banner", $data);
+        echo view("front/reserva");
+        echo view("front/footer");
+    }
 }
