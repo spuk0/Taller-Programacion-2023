@@ -32,16 +32,16 @@
               <a class="nav-link" href="<?php echo base_url("/");?>">Principal</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url("quienessomos");?>">Quienes Somos</a>
+              <a class="nav-link" href="<?php echo base_url("quienes-somos");?>">Quienes Somos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?php echo base_url("comercializacion");?>">Comercialización</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/contact.html">Contacto</a>
+              <a class="nav-link" href="<?php echo base_url("contacto");?>">Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/stats.html">Términos y Usos</a>
+              <a class="nav-link" href="<?php echo base_url("terminos-y-usos");?>">Términos y Usos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./pages/stats.html">Catálogo</a>

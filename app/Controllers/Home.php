@@ -29,20 +29,29 @@ class Home extends BaseController
         $data["title"]="Corrientes Plaza Hotel comercializacion y servicios";
         $data['bannerimg']="assets/img/hotel/habitacion1.jpg";
         echo view("front/head", $data);
-        echo view("front/banner", $data);
         echo view("front/navbar");
+        echo view("front/banner", $data);
         echo view("front/comercializacion");
         echo view("front/footer");
     }
-}
 
-/*
-    public function index(){
-        $data['title']='principal';
-        echo view("front/head_view", $data);
-        echo view("front/nav_view");
-        echo view("front/prueba");
-        echo view("front/footer_view");
+    public function contacto(){
+        $data["title"]="Corrientes Plaza Hotel contacto y forma de contacto";
+        $data['bannerimg']="assets/img/hotel/portada.jpg";
+        echo view("front/head", $data);
+        echo view("front/navbar");
+        echo view("front/banner", $data);
+        echo view("front/contacto");
+        echo view("front/footer");
     }
 
- */
+    public function terminosYUsos(){
+        $data["title"]="Corrientes Plaza Hotel terminos y usos";
+        $data['bannerimg']="assets/img/hotel/sala-estar3.jpg";
+        echo view("front/head", $data);
+        echo view("front/navbar");
+        echo view("front/banner", $data);
+        echo view("front/terminosYUsos");
+        echo view("front/footer");
+    }
+}
