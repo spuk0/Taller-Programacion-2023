@@ -36,6 +36,12 @@ $routes->get('/contacto', 'Home::contacto');
 $routes->get('/terminos-y-usos', 'Home::terminosYUsos');
 $routes->get('/reservacion', 'Home::reservacion');
 
+//Registration form
+$routes->get('registro', 'Usuario_controller::create');
+$routes->get('users-list', 'Usuario_controller::index');
+$routes->post('submit-form', 'Usuario_controller::formValidation');
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

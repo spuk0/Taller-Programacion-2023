@@ -1,0 +1,66 @@
+CRITICAL - 2023-05-12 19:15:59 --> Invalid file: "back/registro.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('back/registro.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back/registro.php', [], true)
+ 3 APPPATH\Controllers\Home.php(64): view('back/registro.php')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->reservacion()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 19:16:16 --> Invalid file: "back/registro.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('back/registro.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back/registro', [], true)
+ 3 APPPATH\Controllers\Home.php(64): view('back/registro')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->reservacion()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 19:16:19 --> Invalid file: "back/registro.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('back/registro.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back/registro', [], true)
+ 3 APPPATH\Controllers\Home.php(64): view('back/registro')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->reservacion()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-12 19:16:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-12 19:16:51 --> Call to undefined function set_value()
+in APPPATH\Views\back\usuario\registro.php on line 25.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back/usuario/registro', [], true)
+ 4 APPPATH\Controllers\Home.php(64): view('back/usuario/registro')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->reservacion()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-12 19:19:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-12 19:19:24 --> Call to undefined function set_value()
+in APPPATH\Views\back\usuario\registro.php on line 25.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back/usuario/registro', [], true)
+ 4 APPPATH\Controllers\Home.php(65): view('back/usuario/registro', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->reservacion()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-12 19:20:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-12 19:20:08 --> Call to undefined function set_value()
+in APPPATH\Views\back\usuario\registro.php on line 25.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back/usuario/registro', [], true)
+ 4 APPPATH\Controllers\Home.php(65): view('back/usuario/registro', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->reservacion()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 19:27:09 --> Call to undefined function App\Controllers\create()
+in APPPATH\Controllers\Home.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->reservacion()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
