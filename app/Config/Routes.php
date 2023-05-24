@@ -41,6 +41,12 @@ $routes->get('registro', 'Usuario_controller::create');
 $routes->get('users-list', 'Usuario_controller::index');
 $routes->post('submit-form', 'Usuario_controller::formValidation');
 
+//Login form
+$routes->get('/login', 'Login_controller');
+$routes->post('/enviarlogin','Login_controller::auth');
+$routes->get('/panel', 'Panel_controller::index',['filter' => 'auth']);
+$routes->get('/logout', 'Login_controller::logout');
+
 
 /*
  * --------------------------------------------------------------------
