@@ -4,7 +4,7 @@
       <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">
           <img
-            src="assets/img/icons/logo_empresa.png"
+            src="<?php echo base_url("assets/img/icons/logo_empresa.png");?>"
             class="navbarLogo"
             alt="logoEmpresa"
             width="40";

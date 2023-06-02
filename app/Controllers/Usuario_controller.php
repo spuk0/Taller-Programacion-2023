@@ -23,6 +23,19 @@ class Usuario_controller extends Controller{
     echo view("front/footer");
   }
 
+      // show single user
+      public function singleUser($id = null){
+        $userModel = new Usuarios_model();
+        $data['user'] = $userModel->where('id', $id)->first();
+        $data["title"]="Editar un usuario";
+        $data['bannerimg']="../assets/img/hotel/comedor2.jpg";
+        echo view("front/head", $data);
+        echo view("front/navbar");
+        echo view("front/banner", $data);
+        echo view("back/usuario/edit_view", $data);
+        echo view("front/footer");
+    }
+
   //Form view de agregar usuarios
     public function create() {
         $data["title"]="Corrientes Plaza Hotel reserva, registrate";
@@ -72,12 +85,12 @@ class Usuario_controller extends Controller{
         }
     }
 
-     // update user data
+     // update data
      public function update(){
-      $userModel = new UserModel();
+      $userModel = new Usuarios_model();
       $id = $this->request->getVar('id');
       $data = [
-          'name' => $this->request->getVar('name'),
+          'nombre' => $this->request->getVar('nombre'),
           'email'  => $this->request->getVar('email'),
       ];
       $userModel->update($id, $data);
@@ -86,7 +99,7 @@ class Usuario_controller extends Controller{
 
       // delete user
       public function delete($id = null){
-          $userModel = new UserModel();
+          $userModel = new Usuarios_model(); //se usa el model que es la tabla.
           $data['user'] = $userModel->where('id', $id)->delete($id);
           return $this->response->redirect(site_url('/users-list'));
       }    

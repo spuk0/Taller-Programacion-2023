@@ -36,10 +36,15 @@ $routes->get('/contacto', 'Home::contacto');
 $routes->get('/terminos-y-usos', 'Home::terminosYUsos');
 $routes->get('/reservacion', 'Home::reservacion');
 
-//Registration form
+//Registration form and CRUD
 $routes->get('registro', 'Usuario_controller::create');
 $routes->get('users-list', 'Usuario_controller::index');
 $routes->post('submit-form', 'Usuario_controller::formValidation');
+
+$routes->get('delete/(:num)', 'Usuario_controller::delete/$1');
+
+$routes->get('edit-view/(:num)', 'Usuario_controller::singleUser/$1');
+$routes->post('update', 'Usuario_controller::update');
 
 //Login form
 $routes->get('/login', 'Login_controller');

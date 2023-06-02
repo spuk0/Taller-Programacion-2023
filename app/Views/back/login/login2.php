@@ -10,13 +10,13 @@
                 <br><br>  
                   <?php if(session()->perfil_id == 1): ?>
                    <div>
-               <img class="center" height="100px" width="80px"src="<?php echo base_url ('img/admin.jpg');?>">  
+               <img class="center" height="100px" width="80px"src="<?php echo base_url ('img/hotel/habitacion2.jpg');?>">  
                 </div>
 
 
                  <?php elseif(session()->perfil_id == 2): ?>   
                 <div>
-               <img class="center" height="100px" width="80px"src="<?php echo base_url ('img/carrito.jpg');?>">  
+               <img class="center" height="100px" width="80px"src="<?php echo base_url ('img/hotel/habitacion1.jpg');?>">  
                 </div>
 
                  <?php endif;?>

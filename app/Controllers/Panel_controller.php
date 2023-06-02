@@ -12,15 +12,14 @@ class Panel_controller extends Controller
         $nombre=$session->get('usuario');
         $perfil=$session->get('perfil_id');
           
-           $data['perfil_id']=$perfil;     
-
+        
+        $data['perfil_id']=$perfil;     
         $data["title"]="Acerca de Corrientes Plaza Hotel, Login form";
         $data['bannerimg']="assets/img/hotel/pasillo.jpg";
-        echo view('front/head',$dato);
+        echo view('front/head',$data);
         echo view('front/navbar');
         echo view("front/banner", $data);
         echo view ('back/login/login2',$data);
-        echo view('front/footer');      
-       
+        echo view('front/footer');       
      }
 }

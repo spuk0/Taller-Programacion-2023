@@ -1,0 +1,187 @@
+CRITICAL - 2023-05-31 18:43:13 --> Class "App\Controllers\UserModel" not found
+in APPPATH\Controllers\Usuario_controller.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->delete('2')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 18:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 18:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 18:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 18:55:13 --> Class "App\Controllers\UserModel" not found
+in APPPATH\Controllers\Usuario_controller.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->singleUser('3')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 18:55:39 --> Invalid file: "edit_user.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit_user.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('edit_user', [], true)
+ 3 APPPATH\Controllers\Usuario_controller.php(30): view('edit_user', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->singleUser('3')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 18:58:20 --> Invalid file: "edit_user.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit_user.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('edit_user', [], true)
+ 3 APPPATH\Controllers\Usuario_controller.php(30): view('edit_user', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->singleUser('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 19:02:57 --> Invalid file: "edit_user.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit_user.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('edit_user', [], true)
+ 3 APPPATH\Controllers\Usuario_controller.php(30): view('edit_user', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->singleUser('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 19:03:13 --> Undefined variable $users
+in APPPATH\Views\back\usuario\usuarios_view.php on line 16.
+ 1 APPPATH\Views\back\usuario\usuarios_view.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\proyecto_friasjavier\\app\\Views\\back\\usuario\\usuarios_view.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\proyecto_friasjavier\\app\\Views\\back\\usuario\\usuarios_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back/usuario/usuarios_view', [], true)
+ 5 APPPATH\Controllers\Usuario_controller.php(34): view('back/usuario/usuarios_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->singleUser('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 19:03:58 --> Undefined variable $users
+in APPPATH\Views\back\usuario\usuarios_view.php on line 16.
+ 1 APPPATH\Views\back\usuario\usuarios_view.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\proyecto_friasjavier\\app\\Views\\back\\usuario\\usuarios_view.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\proyecto_friasjavier\\app\\Views\\back\\usuario\\usuarios_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back/usuario/usuarios_view', [], true)
+ 5 APPPATH\Controllers\Usuario_controller.php(35): view('back/usuario/usuarios_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->singleUser('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 19:04:09 --> Cannot access offset of type string on string
+in APPPATH\Views\back\usuario\usuarios_view.php on line 19.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back/usuario/usuarios_view', [], true)
+ 4 APPPATH\Controllers\Usuario_controller.php(35): view('back/usuario/usuarios_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->singleUser('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 19:05:14 --> Undefined variable $users
+in APPPATH\Views\back\usuario\usuarios_view.php on line 16.
+ 1 APPPATH\Views\back\usuario\usuarios_view.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\proyecto_friasjavier\\app\\Views\\back\\usuario\\usuarios_view.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\proyecto_friasjavier\\app\\Views\\back\\usuario\\usuarios_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back/usuario/usuarios_view', [], true)
+ 5 APPPATH\Controllers\Usuario_controller.php(35): view('back/usuario/usuarios_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->singleUser('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 19:06:50 --> Undefined variable $users
+in APPPATH\Views\back\usuario\usuarios_view.php on line 16.
+ 1 APPPATH\Views\back\usuario\usuarios_view.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\proyecto_friasjavier\\app\\Views\\back\\usuario\\usuarios_view.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\proyecto_friasjavier\\app\\Views\\back\\usuario\\usuarios_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back/usuario/usuarios_view', [], true)
+ 5 APPPATH\Controllers\Usuario_controller.php(35): view('back/usuario/usuarios_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->singleUser('3')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 19:08:04 --> Cannot access offset of type string on string
+in APPPATH\Views\back\usuario\usuarios_view.php on line 19.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back/usuario/usuarios_view', [], true)
+ 4 APPPATH\Controllers\Usuario_controller.php(35): view('back/usuario/usuarios_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->singleUser('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 19:08:46 --> Cannot access offset of type string on string
+in APPPATH\Views\back\usuario\usuarios_view.php on line 19.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back/usuario/usuarios_view', [], true)
+ 4 APPPATH\Controllers\Usuario_controller.php(35): view('back/usuario/usuarios_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->singleUser('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 19:09:50 --> Cannot access offset of type string on string
+in APPPATH\Views\back\usuario\usuarios_view.php on line 19.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back/usuario/usuarios_view', [], true)
+ 4 APPPATH\Controllers\Usuario_controller.php(35): view('back/usuario/usuarios_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->singleUser('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 19:10:47 --> Cannot access offset of type string on string
+in APPPATH\Views\back\usuario\usuarios_view.php on line 19.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back/usuario/usuarios_view', [], true)
+ 4 APPPATH\Controllers\Usuario_controller.php(35): view('back/usuario/usuarios_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->singleUser('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 19:11:10 --> Cannot access offset of type string on string
+in APPPATH\Views\back\usuario\usuarios_view.php on line 19.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back/usuario/usuarios_view', [], true)
+ 4 APPPATH\Controllers\Usuario_controller.php(35): view('back/usuario/usuarios_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->singleUser('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 19:11:44 --> Undefined variable $users
+in APPPATH\Views\back\usuario\usuarios_view.php on line 16.
+ 1 APPPATH\Views\back\usuario\usuarios_view.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\proyecto_friasjavier\\app\\Views\\back\\usuario\\usuarios_view.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\proyecto_friasjavier\\app\\Views\\back\\usuario\\usuarios_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back/usuario/usuarios_view', [], true)
+ 5 APPPATH\Controllers\Usuario_controller.php(35): view('back/usuario/usuarios_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->singleUser('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 19:11:47 --> Undefined variable $users
+in APPPATH\Views\back\usuario\usuarios_view.php on line 16.
+ 1 APPPATH\Views\back\usuario\usuarios_view.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\proyecto_friasjavier\\app\\Views\\back\\usuario\\usuarios_view.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\proyecto_friasjavier\\app\\Views\\back\\usuario\\usuarios_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back/usuario/usuarios_view', [], true)
+ 5 APPPATH\Controllers\Usuario_controller.php(35): view('back/usuario/usuarios_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->singleUser('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 19:14:14 --> Undefined variable $users
+in APPPATH\Views\back\usuario\usuarios_view.php on line 16.
+ 1 APPPATH\Views\back\usuario\usuarios_view.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\proyecto_friasjavier\\app\\Views\\back\\usuario\\usuarios_view.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\proyecto_friasjavier\\app\\Views\\back\\usuario\\usuarios_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back/usuario/usuarios_view', [], true)
+ 5 APPPATH\Controllers\Usuario_controller.php(35): view('back/usuario/usuarios_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->singleUser('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 19:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:24:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:24:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:26:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:31:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:31:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

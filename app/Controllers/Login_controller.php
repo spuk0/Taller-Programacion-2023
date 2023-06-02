@@ -9,11 +9,13 @@ class Login_controller extends BaseController
     {
         helper(['form','url']);
       
-         $dato['titulo']='login'; 
-        echo view('front/head_view',$dato);
-        echo view('front/nav_view');
-        echo view('back/login/login');
-        echo view('front/footer_view');
+        $data["title"]="Acerca de Corrientes Plaza Hotel, Login form";
+        $data['bannerimg']="assets/img/hotel/pasillo.jpg";
+        echo view('front/head',$data);
+        echo view('front/navbar');
+        echo view("front/banner", $data);
+        echo view ('back/login/login2',$data);
+        echo view('front/footer');     
     } 
   
     public function auth()
@@ -57,7 +59,7 @@ class Login_controller extends BaseController
          }   
         }else{
             $session->setFlashdata('msg', 'No Existe el Email o es Incorrecto');
-            return redirect()->to('/login_controller');
+            return redirect()->to('/l ogin_controller');
       } 
     
   }

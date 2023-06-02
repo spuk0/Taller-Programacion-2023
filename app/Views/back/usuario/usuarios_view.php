@@ -19,6 +19,10 @@
              <td><?php echo $user['id']; ?></td>
              <td><?php echo $user['nombre']; ?></td>
              <td><?php echo $user['email']; ?></td>
+             <td>
+               <a href="<?php echo base_url('edit-view/'.$user['id']);?>" class="btn btn-primary btn-sm">Editar</a>
+               <a href="<?php echo base_url('delete/'.$user['id']);?>" class="btn btn-danger btn-sm">Borrar</a>
+              </td>
           </tr>
          <?php endforeach; ?>
          <?php endif; ?>
