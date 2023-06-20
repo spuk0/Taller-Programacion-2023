@@ -14,7 +14,7 @@ class Login_controller extends BaseController
         echo view('front/head',$data);
         echo view('front/navbar');
         echo view("front/banner", $data);
-        echo view ('back/login/login2',$data);
+        echo view ('back/login/login');
         echo view('front/footer');     
     } 
   
@@ -27,18 +27,19 @@ class Login_controller extends BaseController
         $password = $this->request->getVar('pass');
         
         $data = $model->where('email', $email)->first();
+
         if($data){
             $pass = $data['pass'];
-               $ba= $data['baja'];
+            $ba= $data['baja'];
                 if ($ba == 'SI'){
                      $session->setFlashdata('msg', 'usuario dado de baja');
-                     return redirect()->to('/login_controller');
+                     return redirect()->to('/Login_controller');
                  }
                     //Se verifican los datos ingresados para iniciar, si cumple la verificaciòn inicia la sesion
                $verify_pass = password_verify($password, $pass);
                    //password_verify determina los requisitos de configuracion de la contraseña
-                   if($verify_pass){
-                     $ses_data = [
+                if($verify_pass){
+                    $ses_data = [
                     'id' => $data['id'],
                     'nombre' => $data['nombre'],
                     'apellido'=> $data['apellido'],
@@ -55,11 +56,11 @@ class Login_controller extends BaseController
             }else{  
                  //no paso la validaciòn de la password
                $session->setFlashdata('msg', 'Password Incorrecta');
-                return redirect()->to('/login_controller');
+               return $this->response->redirect(site_url('/login'));
          }   
         }else{
             $session->setFlashdata('msg', 'No Existe el Email o es Incorrecto');
-            return redirect()->to('/l ogin_controller');
+            return redirect()->to('/login');
       } 
     
   }
@@ -68,6 +69,6 @@ class Login_controller extends BaseController
     {
         $session = session();
         $session->destroy();
-        return redirect()->to('/prueba');
+        return redirect()->to('/');
     }
 } 

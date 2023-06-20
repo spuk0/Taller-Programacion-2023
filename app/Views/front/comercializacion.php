@@ -6,7 +6,7 @@
           <h2>Podes hacer tu reserva</h2>
         </div>
         <div class="card-body">
-          <h5 class="card-title">Cuando mas lo desees</h5>
+          <h5 class="card-title">Cuando más lo necesites</h5>
           <p class="card-text">Nuestro equipo altamente capacitado se asegura de que tu estadía sea memorable, ofreciendo un servicio excepcional en todas las áreas del hotel. 
             Disfruta de nuestro restaurante con opciones de cocina local e internacional, y relájate en nuestro bar mientras disfrutas de una copa después de un día ocupado.</p>
           <a href="<?php echo base_url("reservacion");?>" class="btn btn-dark">RESERVAR</a>

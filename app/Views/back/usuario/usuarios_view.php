@@ -16,6 +16,7 @@
           <?php if($users): ?>
           <?php foreach($users as $user): ?>
           <tr>
+            <?php if($user['baja'] == 'NO'): ?>
              <td><?php echo $user['id']; ?></td>
              <td><?php echo $user['nombre']; ?></td>
              <td><?php echo $user['email']; ?></td>
@@ -24,6 +25,7 @@
                <a href="<?php echo base_url('delete/'.$user['id']);?>" class="btn btn-danger btn-sm">Borrar</a>
               </td>
           </tr>
+          <?php endif; ?>
          <?php endforeach; ?>
          <?php endif; ?>
        </tbody>

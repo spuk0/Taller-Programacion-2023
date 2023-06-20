@@ -35,16 +35,6 @@ class Home extends BaseController
         echo view("front/footer");
     }
 
-    public function contacto(){
-        $data["title"]="Corrientes Plaza Hotel contacto y forma de contacto";
-        $data['bannerimg']="assets/img/hotel/portada.jpg";
-        echo view("front/head", $data);
-        echo view("front/navbar");
-        echo view("front/banner", $data);
-        echo view("front/contacto");
-        echo view("front/footer");
-    }
-
     public function terminosYUsos(){
         $data["title"]="Corrientes Plaza Hotel terminos y usos";
         $data['bannerimg']="assets/img/hotel/sala-estar3.jpg";

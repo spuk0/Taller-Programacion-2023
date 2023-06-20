@@ -10,14 +10,14 @@
    <!-- php $validación = \Config\Services::validación(); Esto carga automáticamente el archivo Config\Validation que contiene configuraciones para incluir múltiples conjuntos de reglas -->
     <?php $validation = \Config\Services::validation(); ?>
 
-<div class="container mt-1 mb-1 d-flex justify-content-center">
+<div class="container mt-5 mb-5 d-flex justify-content-center">
   <div class="card" style="width: 50%;">
     <div class="card-header text-center">
       <!-- titulo del formulario-->
       <h2>Registrar usuario</h2>
     </div>
       <!-- envio de datos a la ruta /enviar-form -->
-    <form method="post" action="<?php echo base_url('/submit-form') ?>">
+    <form method="post" action="<?php echo base_url() ?>/RegistrarUsuario_controller/formValidation">
       <div class="card-body" media="(max-width:768px)">
         <div class="mb-2">
           <label for="nombre" class="form-label">Nombre</label>
@@ -71,8 +71,15 @@
             </div>
           <?php } ?>
         </div>
-        <input type="submit" value="Guardar" class="btn btn-success">
-        <input type="reset" value="cancelar" class="btn btn-danger">
+        <div>
+          <button type="submit" class="btn btn-success">Registrarse</button>
+          <input type="reset" value="Cancelar" class="btn btn-danger">
+        </div>
+        <div class="mt-2 mb-1">
+          <p>¿Ya tenés cuenta?.</p>
+          <p><a href="<?php echo base_url("login");?>">INGRESA A TU CUENTA</a></p>
+        </div>
+
       </div>
     </form>
   </div>

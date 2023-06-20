@@ -34,5 +34,6 @@
   </footer>
   
   <script src="<?php echo base_url("assets/js/bootstrap.min.js");?>" integrity="" crossorigin=""></script>
+  <script src="<?php echo base_url("assets/js/bootstrap.bundle.js");?>" integrity="" crossorigin=""></script>
   </body>
 </html>

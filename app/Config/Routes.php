@@ -29,28 +29,35 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+
+//Front-end routes
 $routes->get('/', 'Home::index');
 $routes->get('/quienes-somos', 'Home::quienes_somos');
 $routes->get('/comercializacion', 'Home::comercializacion');
-$routes->get('/contacto', 'Home::contacto');
+
+$routes->get('/contacto', 'Contacto_controller::index');
+$routes->match(['get', 'post'], 'Contacto_controller/sendMessage', 'Contacto_controller::sendMessage');
+
 $routes->get('/terminos-y-usos', 'Home::terminosYUsos');
 $routes->get('/reservacion', 'Home::reservacion');
 
-//Registration form and CRUD
-$routes->get('registro', 'Usuario_controller::create');
+
+//Lista de usuarios, borrar y editar.
 $routes->get('users-list', 'Usuario_controller::index');
-$routes->post('submit-form', 'Usuario_controller::formValidation');
-
 $routes->get('delete/(:num)', 'Usuario_controller::delete/$1');
-
 $routes->get('edit-view/(:num)', 'Usuario_controller::singleUser/$1');
 $routes->post('update', 'Usuario_controller::update');
 
-//Login form
-$routes->get('/login', 'Login_controller');
-$routes->post('/enviarlogin','Login_controller::auth');
+
+//Registro
+$routes->get('/registro', 'RegistrarUsuario_controller::index');
+$routes->match(['get', 'post'], 'RegistrarUsuario_controller/formValidation', 'RegistrarUsuario_controller::formValidation');
+//Login
+$routes->match(['get', 'post'], 'Login_controller/auth', 'Login_controller::auth');
+$routes->get('/login', 'Login_controller::index');
 $routes->get('/panel', 'Panel_controller::index',['filter' => 'auth']);
 $routes->get('/logout', 'Login_controller::logout');
+
 
 
 /*
