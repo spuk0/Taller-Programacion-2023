@@ -5,23 +5,37 @@ use CodeIgniter\Controller;
 
 class RegistrarUsuario_controller extends Controller{
 
+  public function __construct()
+    {
+    	helper(['form', 'url']);
+      
+    } 
+
   //Muestra lista de usuarios
   public function index()
   {
-    helper(['form', 'url']);
-
     $data["title"]="Corrientes Plaza Hotel reserva, registrate";
-    $data['bannerimg']="assets/img/hotel/comedor2.jpg";
     echo view("front/head", $data);
     echo view("front/navbar");
-    echo view("front/banner", $data);
     echo view("back/usuario/registro");
     echo view("front/footer");
   }
 
     //Agregar en la base de datos
     public function formValidation() 
-    {
+    { 
+        $model = new Usuarios_model();
+        $email = $this->request->getVar('email');
+        $usuario = $this->request->getVar('usuario');
+
+        if($model->where('email', $email)->first() != null) {
+          session()->setFlashdata('success', 'Error, email ya esta en uso');
+          return $this->response->redirect(site_url('/registro'));
+        }
+        if($model->where('usuario', $usuario)->first() != null) {
+          session()->setFlashdata('success', 'Error, usuario ya esta en uso');
+          return $this->response->redirect(site_url('/registro'));
+        }
         //Reglas de validacion
         $rules = $this->validate([
             'nombre'   => 'required|min_length[3]',

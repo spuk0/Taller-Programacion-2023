@@ -1,3 +1,5 @@
+  <main>
+  <div>
   <!--recuperamos datos con la función Flashdata para mostrarlos-->
   <?php if (session()->getFlashdata('msg')) {
       echo "
@@ -9,7 +11,7 @@
    <!-- php $validación = \Config\Services::validación(); Esto carga automáticamente el archivo Config\Validation que contiene configuraciones para incluir múltiples conjuntos de reglas -->
     <?php $validation = \Config\Services::validation(); ?>
 
-<div class="container mt-5 mb-5 d-flex justify-content-center">
+<div class="container login-card d-flex justify-content-center align-self-center">
   <div class="card" style="width: 50%;">
     <div class="card-header text-center">
       <!-- titulo del formulario-->
@@ -20,12 +22,12 @@
       <div class="card-body" media="(max-width:768px)">
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
-          <input name="email" type="email" class="form-control" value="<?php echo set_value('email')?>"  placeholder="correo@algo.com">
+          <input name="email" type="email" class="form-control" required value="<?php echo set_value('email')?>"  placeholder="correo@algo.com">
           <!-- Aca falta un error para validacion -->
         </div>
         <div class="mb-3">
           <label for="pass" class="form-label">Password</label>
-          <input name="pass" type="password" class="form-control" placeholder="contraseña">
+          <input name="pass" type="password" required class="form-control" placeholder="contraseña">
           <!-- Aca falta un error para validacion -->
         </div>
         <div>

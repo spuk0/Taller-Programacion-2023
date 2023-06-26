@@ -10,10 +10,8 @@ class Login_controller extends BaseController
         helper(['form','url']);
       
         $data["title"]="Acerca de Corrientes Plaza Hotel, Login form";
-        $data['bannerimg']="assets/img/hotel/pasillo.jpg";
         echo view('front/head',$data);
         echo view('front/navbar');
-        echo view("front/banner", $data);
         echo view ('back/login/login');
         echo view('front/footer');     
     } 
@@ -55,11 +53,11 @@ class Login_controller extends BaseController
                   return redirect()->to('/panel');
             }else{  
                  //no paso la validaciòn de la password
-               $session->setFlashdata('msg', 'Password Incorrecta');
+               $session->setFlashdata('msg', 'Email y contraseña no coinciden');
                return $this->response->redirect(site_url('/login'));
          }   
         }else{
-            $session->setFlashdata('msg', 'No Existe el Email o es Incorrecto');
+            $session->setFlashdata('msg', 'Por favor ingrese un email correcto');
             return redirect()->to('/login');
       } 
     

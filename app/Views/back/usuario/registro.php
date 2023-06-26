@@ -1,3 +1,4 @@
+<main>
 <div>
   <!--recuperamos datos con la función Flashdata para mostrarlos-->
   <?php if (session()->getFlashdata('success')) {
@@ -52,7 +53,7 @@
         </div>
         <div class="mb-3">
           <label for="usuario" class="form-label">Usuario</label>
-          <input type="text" name="usuario" value="<?php echo set_value('usuario')?>" class="form-control" placeholder="Usuario">
+          <input type="text" name="usuario" value="" class="form-control" required placeholder="Usuario">
           <!-- Error -->
           <?php if ($validation->getError('usuario')) { ?>
             <div class='alert alert-danger mt-2'>

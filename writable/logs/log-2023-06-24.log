@@ -1,0 +1,85 @@
+INFO - 2023-06-24 04:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:03:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:03:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:03:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:04:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:04:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:04:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:04:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:08:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:08:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:08:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:08:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:08:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:08:46 --> Cart Class Initialized
+INFO - 2023-06-24 04:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:09:08 --> Cart Class Initialized
+INFO - 2023-06-24 04:09:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:09:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:09:15 --> Cart Class Initialized
+INFO - 2023-06-24 04:09:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:09:19 --> Cart Class Initialized
+INFO - 2023-06-24 04:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:09:20 --> Cart Class Initialized
+INFO - 2023-06-24 04:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:09:27 --> Cart Class Initialized
+ERROR - 2023-06-24 04:09:27 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_frias_javier`.`ventas_detalle`, CONSTRAINT `ventas_detalle_ibfk_1` FOREIGN KEY (`reserva_id`) REFERENCES `reservas` (`id`)) in C:\xampp\htdocs\proyecto_friasjavier\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_friasjavier\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp\htdocs\proyecto_friasjavier\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp\htdocs\proyecto_friasjavier\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp\htdocs\proyecto_friasjavier\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp\htdocs\proyecto_friasjavier\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_friasjavier\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_friasjavier\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_friasjavier\app\Controllers\Ventas_controller.php(92): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_friasjavier\system\CodeIgniter.php(934): App\Controllers\Ventas_Controller->comprar_carrito()
+#9 C:\xampp\htdocs\proyecto_friasjavier\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas_Controller))
+#10 C:\xampp\htdocs\proyecto_friasjavier\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_friasjavier\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-06-24 04:09:27 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_frias_javier`.`ventas_detalle`, CONSTRAINT `ventas_detalle_ibfk_1` FOREIGN KEY (`reserva_id`) REFERENCES `reservas` (`id`)) in C:\xampp\htdocs\proyecto_friasjavier\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_friasjavier\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp\htdocs\proyecto_friasjavier\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp\htdocs\proyecto_friasjavier\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp\htdocs\proyecto_friasjavier\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp\htdocs\proyecto_friasjavier\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_friasjavier\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_friasjavier\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_friasjavier\app\Controllers\Ventas_controller.php(92): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_friasjavier\system\CodeIgniter.php(934): App\Controllers\Ventas_Controller->comprar_carrito()
+#9 C:\xampp\htdocs\proyecto_friasjavier\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas_Controller))
+#10 C:\xampp\htdocs\proyecto_friasjavier\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_friasjavier\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+INFO - 2023-06-24 04:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:09:27 --> Cart Class Initialized
+INFO - 2023-06-24 04:09:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:09:30 --> Cart Class Initialized
+INFO - 2023-06-24 04:09:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:09:31 --> Cart Class Initialized
+INFO - 2023-06-24 04:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:10:24 --> Cart Class Initialized
+INFO - 2023-06-24 04:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:10:27 --> Cart Class Initialized
+INFO - 2023-06-24 04:10:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:10:32 --> Cart Class Initialized
+INFO - 2023-06-24 04:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 04:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

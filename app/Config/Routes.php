@@ -34,11 +34,13 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('/quienes-somos', 'Home::quienes_somos');
 $routes->get('/comercializacion', 'Home::comercializacion');
+$routes->get('/terminos-y-usos', 'Home::terminosYUsos');
 
+//Formulario de mensajes en contacto.
 $routes->get('/contacto', 'Contacto_controller::index');
 $routes->match(['get', 'post'], 'Contacto_controller/sendMessage', 'Contacto_controller::sendMessage');
 
-$routes->get('/terminos-y-usos', 'Home::terminosYUsos');
+//Mis productos, habitaciones de hotel.
 $routes->get('/reservacion', 'Home::reservacion');
 
 
@@ -58,7 +60,31 @@ $routes->get('/login', 'Login_controller::index');
 $routes->get('/panel', 'Panel_controller::index',['filter' => 'auth']);
 $routes->get('/logout', 'Login_controller::logout');
 
+//Reservas
+$routes->get('reservas-list', 'Reservas_controller::index');
+$routes->get('crearReserva', 'Reservas_controller::crearReservas');
+$routes->match(['get', 'post'], 'Reservas_controller/store', 'Reservas_controller::store');
+$routes->get('editReserva/(:num)', 'Reservas_controller::unaReserva/$1');
+$routes->post('modificar/(:num)', 'Reservas_controller::modificar/$1');
+$routes->get('borrarReserva/(:num)', 'Reservas_controller::borrarReserva/$1');
 
+//Lista de reservas eliminadas o deshabilitadas.
+$routes->get('reservasEliminadas', 'Reservas_controller::listaReservasEliminadas');
+$routes->get('activarReserva/(:num)', 'Reservas_controller::activarReserva/$1');
+
+//Catalogo
+$routes->get('reservaCatalogo', 'ReservaCatalogo_controller::index');
+
+//Ventas
+$routes->get('/ventas_view','Ventas_controller::ventas');
+
+//Carrito
+$routes->get('/carrito','Carrito_controller::muestra',['filter'=>'auth']);
+$routes->get('/carrito-actualiza','Carrito_controller::actualiza_carrito',['filter'=>'auth']);
+$routes->post('/carrito-agrega','Carrito_controller::add',['filter'=>'auth']);
+$routes->get('/carrito-elimina/(:any)','Carrito_controller::remove/$1',['filter'=>'auth']);
+$routes->get('/borrar','Carrito_controller::borrar_carrito',['filter'=>'auth']);
+$routes->get('/carrito-comprar','Ventas_controller::comprar_carrito',['filter'=>'auth']);
 
 /*
  * --------------------------------------------------------------------
